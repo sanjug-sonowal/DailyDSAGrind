@@ -30,18 +30,16 @@ int main(){
     }
 
     for(int i = 1; i < rows; i++){
-        // Leading spaces
-        for(int j = 0; j < i; j++){   // FIX: i spaces, i+1 nahi
+        for(int j = 0; j < i; j++){
             cout << "  ";
         }
 
-        // Numbers: max value = rows - i
-        int m = rows - i;             // FIX: sahi formula
+        int m = rows - i;
         for(int j = 0; j < 2 * m - 1; j++){
             if(j < m){
-                cout << m - j<<" ";        // Descending
+                cout << m - j<<" ";
             }else{
-                cout << j - m + 2<<" ";    // Ascending
+                cout << j - m + 2<<" ";
             }
         }
         cout << endl;
